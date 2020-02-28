@@ -1,0 +1,16 @@
+<a
+  routerLinkActive="text-warning"
+  [routerLink]="[index]"
+  style="cursor: pointer;"
+  class="card my-3"
+>
+  <span>
+    <img [src]="recipe.imagePath" alt="{{ recipe.name }}" class="img-fluid" />
+  </span>
+  <div class="list-group list-group-flush">
+    <h4 class="card-header list-group-item">{{ recipe.name }}</h4>
+    <p class="card-link list-group-item">
+      {{ recipe.description }}
+    </p>
+  </div>
+</a>
